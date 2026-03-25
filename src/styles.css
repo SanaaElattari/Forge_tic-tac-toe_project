@@ -1,8 +1,7 @@
 * {
   box-sizing: border-box;
 }
-
-body {
+title body {
   font-family: sans-serif;
   margin: 20px;
   padding: 0;
@@ -54,26 +53,28 @@ body {
   font-family: sans-serif;
   margin: 20px;
   padding: 0;
+  background-color: #1e1e2f;
 }
 
 .square {
-  background: #fff;
+  background: greenyellow;
   border: 1px solid #999;
   float: left;
-  font-size: 24px;
+  font-size: 32px;
   font-weight: bold;
   line-height: 34px;
-  height: 34px;
+  height: 100px;
   margin-right: -1px;
   margin-top: -1px;
   padding: 0;
   text-align: center;
-  width: 34px;
+  width: 100px;
+  cursor: pointer;
 }
 
 .board-row:after {
   clear: both;
-  content: '';
+  content: "";
   display: table;
 }
 
@@ -83,6 +84,8 @@ body {
 .game {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .game-info {
